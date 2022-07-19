@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AQUARIUM SEA | TCO 2022</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <style type="text/css">
+      body {
+        margin: 0px;
+        overflow: hidden;
+        font-family: sans-serif;
+        background-color: #000000;
+        color: white;
+      }
+      #axes {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        margin: 10px;
+        padding: 0px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: 10;
+      }
+      #blocker {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      #instructions {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      window.DEBUG = false
+    </script>
+    <script src="app.js" async></script>
+  </head>
+  <body>
+    <div id="blocker">
+      <div id="instructions">
+        <p style="font-size: 36px">Click to play</p>
+        <p>
+          Welcome to the Aquarium Sea. You are an underwater adventurer who is
+          trying to find all the fish in the world.<br />
+        </p>
+        <p>
+          Move: WASD<br />
+          Up: SPACE<br />
+          Down: SHIFT
+        </p>
+        <p>
+          You have to be patient... or not. Set the <code>DEBUG</code> variable
+          to <code>true</code> to see everything happening.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

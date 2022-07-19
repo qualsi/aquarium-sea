@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "format": "prettier --write .",
+    "dev": "esbuild src/index.js --bundle --outfile=dist/app.js --serve=8000 --servedir=dist --sourcemap",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/app.js"
+  },
+  "dependencies": {
+    "three": "^0.142.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.49",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0"
+  }
+}
